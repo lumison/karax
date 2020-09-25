@@ -27,7 +27,7 @@ var loggedIn: bool
 proc loginDialog(): VNode =
   result = buildHtml(tdiv):
     if not loggedIn:
-      loginField("Name :", username, "input", validateNotEmpty)
+      loginField("Name: ", username, "input", validateNotEmpty)
       loginField("Password: ", password, "password", validateNotEmpty)
       button(onclick = () => (loggedIn = true), disabled = errors.disableOnError()):
         text "Login"
