@@ -268,8 +268,8 @@ pieces together to write our login dialog:
 
   # some consts in order to prevent typos:
   const
-    username: kstring = "username"
-    password: kstring = "password"
+    username = kstring"username"
+    password = kstring"password"
 
   var loggedIn: bool
 
